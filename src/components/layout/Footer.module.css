@@ -1,0 +1,7 @@
+.footer {
+  margin-top: 96px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-label);
+  color: var(--color-text-sub);
+}

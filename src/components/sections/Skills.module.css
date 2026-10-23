@@ -1,0 +1,80 @@
+.groups {
+  display: grid;
+  gap: 40px;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 24px;
+}
+
+.category {
+  padding-top: 2px;
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.item + .item {
+  margin-top: 12px;
+}
+
+/* 名前 ······ 経験年数 */
+.line {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.dots {
+  flex: 1;
+  border-bottom: 2px dotted var(--color-border);
+}
+
+.years {
+  font-family: var(--font-label);
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+}
+
+.legend {
+  display: grid;
+  gap: 4px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: var(--color-text-sub);
+}
+
+.legendItem {
+  display: flex;
+  gap: 12px;
+}
+
+/* ★の幅をそろえて説明文の頭を一直線にする */
+.legendItem dt {
+  min-width: 5em;
+  color: var(--color-accent);
+}
+
+@media (max-width: 599px) {
+  .group {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

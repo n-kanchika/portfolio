@@ -1,0 +1,37 @@
+.message {
+  color: var(--color-text-sub);
+}
+
+.email {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  word-break: break-all;
+  /* マーカーを引いたような下線 */
+  background: linear-gradient(transparent 62%, var(--color-accent-soft) 62%);
+  transition: color 0.2s;
+}
+
+.email:hover {
+  color: var(--color-accent);
+}
+
+.snsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 32px;
+  font-family: var(--font-label);
+  font-size: 0.9rem;
+}
+
+.snsList a {
+  color: var(--color-text-sub);
+  transition: color 0.2s;
+}
+
+.snsList a:hover {
+  color: var(--color-accent);
+}

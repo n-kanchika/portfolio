@@ -1,0 +1,90 @@
+.list {
+  display: grid;
+  gap: 8px;
+}
+
+/* 1件 = [年] [タイトル・タグ] [サムネイル] の横並び */
+.row {
+  display: grid;
+  grid-template-columns: 4rem 1fr 160px;
+  gap: 24px;
+  align-items: start;
+  padding: 20px;
+  margin-inline: -20px;
+  border-radius: var(--radius-md);
+  transition: background 0.2s;
+}
+
+.row:hover {
+  background: var(--color-surface);
+}
+
+.year {
+  padding-top: 4px;
+  font-family: var(--font-label);
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+}
+
+.title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
+  transition: color 0.2s;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.2s;
+}
+
+.row:hover .title {
+  color: var(--color-accent);
+}
+
+.row:hover .arrow {
+  transform: translateX(4px);
+}
+
+.client {
+  font-size: 0.9rem;
+  color: var(--color-text-sub);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 12px;
+}
+
+.tech {
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  color: var(--color-text-sub);
+}
+
+.thumb {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 599px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .thumb {
+    grid-row: 1;
+  }
+}

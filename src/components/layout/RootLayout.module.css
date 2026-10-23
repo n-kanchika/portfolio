@@ -1,0 +1,25 @@
+/* PC: 左にサイドバー（固定）／右にコンテンツ。スマホ: 縦に並ぶ */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 2fr) 3fr;
+  gap: 64px;
+  max-width: calc(var(--content-width) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.main {
+  min-width: 0;
+  padding-block: 96px 48px;
+}
+
+@media (max-width: 899px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .main {
+    padding-top: 24px;
+  }
+}

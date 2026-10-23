@@ -1,0 +1,106 @@
+:root {
+  /* ===== 色（暫定）: クリーム × くすみピンク ===== */
+  --color-bg: #faf7f2; /* 背景 */
+  --color-surface: #f2ece3; /* ホバー時・面の背景 */
+  --color-border: #e6dfd4; /* 罫線 */
+  --color-text: #4a4541; /* 本文 */
+  --color-text-sub: #7a726a; /* 補足テキスト */
+  --color-accent: #a8566a; /* アクセント（文字に使っても読める濃さ） */
+  --color-accent-soft: #f6dde3; /* アクセントの淡い色（背景・マーカー用） */
+  --color-sub-accent: #4c7358; /* 2色目（「個人開発」タグなど） */
+  --color-sub-accent-soft: #e0ebe2;
+
+  /* ===== フォント（暫定） ===== */
+  --font-sans: 'Nunito', 'Zen Maru Gothic', sans-serif; /* 英字 → 和文の順に適用 */
+  --font-label: 'Nunito', sans-serif; /* 番号・年号・ラベル */
+
+  /* ===== 角丸 ===== */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+
+  /* ===== レイアウト ===== */
+  --content-width: 1200px;
+  --gutter: 16px;
+
+  /* Swiper の矢印・ドットの色 */
+  --swiper-theme-color: var(--color-accent);
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+section[id] {
+  scroll-margin-top: 48px;
+}
+
+/* 画面には表示せず、スクリーンリーダーにだけ読ませる */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

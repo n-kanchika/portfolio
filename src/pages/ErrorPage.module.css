@@ -1,0 +1,18 @@
+.wrapper {
+  display: grid;
+  place-content: center;
+  gap: 16px;
+  min-height: 60svh;
+  padding: 48px var(--gutter);
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-label);
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+.link {
+  text-decoration: underline;
+}

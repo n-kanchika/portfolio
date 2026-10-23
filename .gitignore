@@ -1,0 +1,10 @@
+node_modules
+dist
+*.local
+.env
+.DS_Store
+*.log
+todoリスト.txt
+
+# 公開確認が取れていない実案件データ
+src/data/works.private.ts

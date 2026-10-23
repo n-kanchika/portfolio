@@ -1,0 +1,20 @@
+.tag {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 999px;
+  font-family: var(--font-label);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.8;
+  white-space: nowrap;
+}
+
+.work {
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.private {
+  color: var(--color-sub-accent);
+  background: var(--color-sub-accent-soft);
+}
