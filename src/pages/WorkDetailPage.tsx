@@ -1,5 +1,6 @@
 import { Link, useLoaderData, useRouteLoaderData, type LoaderFunctionArgs } from 'react-router'
 import type { loader as rootLoader } from '@/components/layout/RootLayout'
+import { GithubIcon } from '@/components/ui/GithubIcon'
 import { ImageSlider } from '@/components/ui/ImageSlider'
 import { WorkTag } from '@/components/ui/WorkTag'
 import { getWork } from '@/lib/api'
@@ -75,6 +76,17 @@ export function WorkDetailPage() {
           <div>
             <dt>Environment</dt>
             <dd>{work.environment.join(' / ')}</dd>
+          </div>
+        )}
+        {work.repositoryUrl && (
+          <div>
+            <dt>Repository</dt>
+            <dd>
+              <a href={work.repositoryUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                <GithubIcon />
+                GitHub ↗
+              </a>
+            </dd>
           </div>
         )}
       </dl>

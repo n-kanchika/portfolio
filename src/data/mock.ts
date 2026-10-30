@@ -22,6 +22,7 @@ export const mockWorks: Work[] = [
     phases: ['詳細設計', '製造', 'テスト', '修正'],
     tags: ['HTML / CSS', 'PHP（Laravel）', 'MySQL', 'Docker', 'Git'],
     environment: ['HTML / CSS', 'PHP 8.3（Laravel 8.83）', 'MySQL', 'Docker', 'Git'],
+    repositoryUrl: 'https://github.com/n-kanchika/rese',
     contents: [
       {
         title: '概要',
@@ -71,6 +72,7 @@ export const mockWorks: Work[] = [
     phases: ['詳細設計', '製造', 'テスト', '修正'],
     tags: ['HTML / CSS', 'PHP（Laravel）', 'MySQL', 'Docker', 'Git'],
     environment: ['HTML / CSS', 'PHP 7.4（Laravel 8.83）', 'MySQL', 'Docker', 'Git'],
+    repositoryUrl: 'https://github.com/n-kanchika/attendance',
     contents: [
       {
         title: '概要',

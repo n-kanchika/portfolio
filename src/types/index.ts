@@ -37,6 +37,8 @@ export type Work = {
   tags?: string[]
   /** 詳細ページの開発環境（バージョン込み） */
   environment?: string[]
+  /** ソースコードのレポジトリURL */
+  repositoryUrl?: string
   contents: WorkContent[]
 }
 
