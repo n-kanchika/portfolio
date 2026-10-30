@@ -1,5 +1,6 @@
 import type { Profile, Skill, Work } from '@/types'
-import { placeholder } from './placeholder'
+import atteImg from '@/assets/imgs/works/attendance.png'
+import reseImg from '@/assets/imgs/works/rese.jpg'
 
 // 実案件（genre: 'work'）は works.private.ts に分離して git 管理外にしている
 // ファイルが無い環境（clone 直後・CI など）では空になり、個人開発の作品だけが表示される
@@ -13,7 +14,7 @@ export const mockWorks: Work[] = [
     id: 'restaurant-reservation',
     title: '飲食店予約アプリ開発',
     genre: 'private',
-    thumbnail: placeholder('Reservation'),
+    thumbnail: { url: reseImg, width: 1600, height: 957 },
     startedAt: '2024-08',
     endedAt: '2024-10',
     duration: '2ヶ月',
@@ -62,7 +63,7 @@ export const mockWorks: Work[] = [
     id: 'attendance-app',
     title: '業務用勤怠管理の Web アプリ開発',
     genre: 'private',
-    thumbnail: placeholder('Attendance'),
+    thumbnail: { url: atteImg, width: 1706, height: 998 },
     startedAt: '2024-06',
     endedAt: '2024-08',
     duration: '2ヶ月',
