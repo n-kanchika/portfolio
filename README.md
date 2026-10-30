@@ -3,10 +3,9 @@
 Web エンジニア NANA KANCHIKA のポートフォリオサイトです。
 これまでの制作実績・スキル・連絡先をまとめています。
 
-**サイト URL：** <!-- TODO: Netlify の URL に差し替え --> https://example.netlify.app
+**サイト URL：** https://nana-kanchika.netlify.app
 
 ![サイトのスクリーンショット](docs/screenshot.png)
-<!-- TODO: docs/screenshot.png を追加（PC 表示 1280px 幅程度がおすすめ） -->
 
 ## 使用技術
 
