@@ -53,10 +53,22 @@ export function WorkDetailPage() {
             <dd>{work.team}</dd>
           </div>
         )}
+        {work.roles && (
+          <div>
+            <dt>Role</dt>
+            <dd>{work.roles.join(' / ')}</dd>
+          </div>
+        )}
         {work.phases && (
           <div>
             <dt>Process</dt>
             <dd>{work.phases.join(' / ')}</dd>
+          </div>
+        )}
+        {work.duties && (
+          <div>
+            <dt>Tasks</dt>
+            <dd>{work.duties.join(' / ')}</dd>
           </div>
         )}
         {work.environment && (
