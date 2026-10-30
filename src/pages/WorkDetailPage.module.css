@@ -50,6 +50,18 @@
   color: var(--color-accent);
 }
 
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-sub-accent);
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
 .content {
   margin-top: 48px;
 }
