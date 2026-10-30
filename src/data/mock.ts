@@ -114,11 +114,11 @@ export const mockSkills: Skill[] = [
 export const mockProfile: Profile = {
   name: 'NANA KANCHIKA',
   role: 'Web Engineer',
-  introduction: '5年間教員を勤めた後、Web制作の仕事に転職。\nPHP（Laravel）とJavaScript、HTML/CSSを用いたプロジェクトで1年9ヶ月間フロントエンド・バックエンドの実務を経験。\n現在はReact + TypeScriptを用いたフロントエンド開発に注力している。',
+  introduction: '5年間教員を勤めた後、Web制作の仕事に転職しました。\nPHP（Laravel）とJavaScript、HTML/CSSを用いたプロジェクトで1年9ヶ月間フロントエンド・バックエンドの実務を経験しました。\n「ユーザーにとって使いやすいサービスを作る」ことを大切にしています。',
   sns: [
-    { name: 'GitHub', url: 'https://github.com/' },
+    { name: 'GitHub', url: 'https://github.com/n-kanchika/' },
   ],
-  email: 'xxx@gmail.com',
+  // email: 'xxx@gmail.com',
   contactMessage: '現在お仕事の受注は停止しております。再開時期は未定です。',
   // contactMessage: 'お仕事のご相談・ご依頼は、メールからお気軽にどうぞ。',
 }
