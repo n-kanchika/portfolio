@@ -27,8 +27,12 @@ export type Work = {
   duration?: string
   /** 開発規模・役割（例: 'PM 1名 / 実装者 3名'） */
   team?: string
+  /** 役割（例: '実装者'） */
+  roles?: string[]
   /** 担当工程 */
   phases?: string[]
+  /** 業務内容（例: '各種資料の作成'） */
+  duties?: string[]
   /** 開発環境・使用技術 */
   tags?: string[]
   /** 詳細ページの開発環境（バージョン込み） */
