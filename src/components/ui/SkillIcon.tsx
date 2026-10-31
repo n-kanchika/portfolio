@@ -16,5 +16,5 @@ export function SkillIcon({ id, className }: { id: string; className?: string })
   if (!entry) return null
 
   const { icon: Icon, color } = entry
-  return Icon ? <Icon className={className} color={color} aria-hidden="true" /> : null
+  return <Icon className={className} color={color} aria-hidden="true" />
 }
