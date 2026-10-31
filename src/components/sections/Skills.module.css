@@ -34,6 +34,11 @@
   font-weight: 600;
 }
 
+.icon {
+  margin-right: 8px;
+  vertical-align: -0.125em;
+}
+
 .dots {
   flex: 1;
   border-bottom: 2px dotted var(--color-border);
