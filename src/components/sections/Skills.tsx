@@ -2,6 +2,7 @@ import { SectionTitle } from '@/components/ui/SectionTitle'
 import type { Skill } from '@/types'
 import { experienceSince } from '@/utils/period'
 import styles from './Skills.module.css'
+import { SkillIcon } from '@/components/ui/SkillIcon'
 
 /** category ごとにまとめる（並び順はデータに出てきた順） */
 function groupByCategory(skills: Skill[]) {
@@ -35,7 +36,10 @@ export function Skills({ skills }: { skills: Skill[] }) {
               {items.map((skill) => (
                 <li key={skill.id} className={styles.item}>
                   <div className={styles.line}>
-                    <span className={styles.name}>{skill.name}</span>
+                    <span className={styles.name}>
+                      <SkillIcon id={skill.id} className={styles.icon} />
+                      {skill.name}
+                    </span>
                     <span className={styles.dots} />
                     <span className={styles.years}>{experienceSince(skill.startedAt)}</span>
                   </div>
