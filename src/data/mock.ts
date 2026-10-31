@@ -1,6 +1,6 @@
-import type { Profile, Skill, Work } from '@/types'
 import atteImg from '@/assets/imgs/works/attendance.png'
 import reseImg from '@/assets/imgs/works/rese.jpg'
+import type { Profile, Skill, Work } from '@/types'
 
 // 実案件（genre: 'work'）は works.private.ts に分離して git 管理外にしている
 // ファイルが無い環境（clone 直後・CI など）では空になり、個人開発の作品だけが表示される

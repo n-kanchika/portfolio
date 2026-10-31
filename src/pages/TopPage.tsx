@@ -1,9 +1,11 @@
 import { useLoaderData, useRouteLoaderData } from 'react-router'
+
+import type { loader as rootLoader } from '@/components/layout/RootLayout'
 import { Contact } from '@/components/sections/Contact'
 import { Skills } from '@/components/sections/Skills'
 import { Works } from '@/components/sections/Works'
-import type { loader as rootLoader } from '@/components/layout/RootLayout'
 import { getSkills, getWorks } from '@/lib/api'
+
 import styles from './TopPage.module.css'
 
 export async function loader() {

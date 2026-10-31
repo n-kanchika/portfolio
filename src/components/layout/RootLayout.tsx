@@ -1,8 +1,10 @@
 import { Outlet, ScrollRestoration, useLoaderData } from 'react-router'
+
 import { getProfile } from '@/lib/api'
+
 import { Footer } from './Footer'
-import { Sidebar } from './Sidebar'
 import styles from './RootLayout.module.css'
+import { Sidebar } from './Sidebar'
 
 // サイドバーは全ページ共通なので、プロフィールはここで読み込む
 export async function loader() {

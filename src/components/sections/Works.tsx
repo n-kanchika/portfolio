@@ -1,7 +1,9 @@
 import { Link } from 'react-router'
+
 import { SectionTitle } from '@/components/ui/SectionTitle'
 import { WorkTag } from '@/components/ui/WorkTag'
 import type { Work } from '@/types'
+
 import styles from './Works.module.css'
 
 export function Works({ works }: { works: Work[] }) {
