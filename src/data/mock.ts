@@ -106,7 +106,7 @@ export const mockSkills: Skill[] = [
   { id: 'html-css', category: 'Frontend', name: 'HTML / CSS', startedAt: '2024-06', description: 'セマンティックなマークアップ、レスポンシブ対応', level: 5 },
   { id: 'php-laravel', category: 'Backend', name: 'PHP / Laravel', startedAt: '2024-06', description: 'マルチガード認証、ミドルウェア、Observer、バッチ処理、Livewire', level: 5 },
   { id: 'mysql', category: 'Backend', name: 'MySQL', startedAt: '2024-06', description: 'テーブル設計、マイグレーション管理', level: 4 },
-  { id: 'git', category: 'Tools', name: 'Git / GitHub', startedAt: '2024-06', description: 'Azure DevOps でのチーム開発', level: 4 },
+  { id: 'git', category: 'Tools', name: 'Git / GitHub', startedAt: '2024-06', description: '個人開発でのバージョン管理、Azure DevOps でのチーム開発（1年5ヶ月）', level: 4 },
   { id: 'docker', category: 'Tools', name: 'Docker', startedAt: '2024-06', description: 'Laravel 開発環境の構築・運用', level: 4 },
   { id: 'javascript', category: 'Frontend', name: 'JavaScript', startedAt: '2025-06', description: 'Vanilla JS・jQuery による機能実装、CKEditor のカスタマイズ', level: 4 },
 ]
