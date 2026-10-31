@@ -24,8 +24,7 @@ export const formatMonths = (months: number) => {
 }
 
 /** 開始月から現在までの経験年数 */
-export const experienceSince = (startedAt: string) =>
-  formatMonths(diffMonths(startedAt, currentYearMonth()))
+export const experienceSince = (startedAt: string) => formatMonths(diffMonths(startedAt, currentYearMonth()))
 
 /** 'YYYY-MM' → 'YYYY.MM' */
 export const formatYearMonth = (value: string) => value.replace('-', '.')

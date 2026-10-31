@@ -103,21 +103,62 @@ export const mockWorks: Work[] = [
 
 // category が同じものは同じグループにまとめて表示される（グループの並び順は最初に出てきた順）
 export const mockSkills: Skill[] = [
-  { id: 'html-css', category: 'Frontend', name: 'HTML / CSS', startedAt: '2024-06', description: 'セマンティックなマークアップ、レスポンシブ対応', level: 5 },
-  { id: 'php-laravel', category: 'Backend', name: 'PHP / Laravel', startedAt: '2024-06', description: 'マルチガード認証、ミドルウェア、Observer、バッチ処理、Livewire', level: 5 },
-  { id: 'mysql', category: 'Backend', name: 'MySQL', startedAt: '2024-06', description: 'テーブル設計、マイグレーション管理', level: 4 },
-  { id: 'git', category: 'Tools', name: 'Git / GitHub', startedAt: '2024-06', description: '個人開発でのバージョン管理、Azure DevOps でのチーム開発（1年5ヶ月）', level: 4 },
-  { id: 'docker', category: 'Tools', name: 'Docker', startedAt: '2024-06', description: 'Laravel 開発環境の構築・運用', level: 4 },
-  { id: 'javascript', category: 'Frontend', name: 'JavaScript', startedAt: '2025-06', description: 'Vanilla JS・jQuery による機能実装、CKEditor のカスタマイズ', level: 4 },
+  {
+    id: 'html-css',
+    category: 'Frontend',
+    name: 'HTML / CSS',
+    startedAt: '2024-06',
+    description: 'セマンティックなマークアップ、レスポンシブ対応',
+    level: 5,
+  },
+  {
+    id: 'php-laravel',
+    category: 'Backend',
+    name: 'PHP / Laravel',
+    startedAt: '2024-06',
+    description: 'マルチガード認証、ミドルウェア、Observer、バッチ処理、Livewire',
+    level: 5,
+  },
+  {
+    id: 'mysql',
+    category: 'Backend',
+    name: 'MySQL',
+    startedAt: '2024-06',
+    description: 'テーブル設計、マイグレーション管理',
+    level: 4,
+  },
+  {
+    id: 'git',
+    category: 'Tools',
+    name: 'Git / GitHub',
+    startedAt: '2024-06',
+    description: '個人開発でのバージョン管理、Azure DevOps でのチーム開発（1年5ヶ月）',
+    level: 4,
+  },
+  {
+    id: 'docker',
+    category: 'Tools',
+    name: 'Docker',
+    startedAt: '2024-06',
+    description: 'Laravel 開発環境の構築・運用',
+    level: 4,
+  },
+  {
+    id: 'javascript',
+    category: 'Frontend',
+    name: 'JavaScript',
+    startedAt: '2025-06',
+    description: 'Vanilla JS・jQuery による機能実装、CKEditor のカスタマイズ',
+    level: 4,
+  },
 ]
 
 export const mockProfile: Profile = {
   name: 'NANA KANCHIKA',
   role: 'Web Engineer',
-  introduction: '5年間教員を勤めた後、Web制作の仕事に転職しました。\nPHP（Laravel）とJavaScript、HTML/CSSを用いたプロジェクトで1年9ヶ月間フロントエンド・バックエンドの実務を経験しました。\n「ユーザーにとって使いやすいサービスを作る」ことを大切にしています。',
-  sns: [
-    { name: 'GitHub', url: 'https://github.com/n-kanchika/' },
-  ],
+  introduction:
+    '5年間教員を勤めた後、Web制作の仕事に転職しました。\nPHP（Laravel）とJavaScript、HTML/CSSを用いたプロジェクトで1年9ヶ月間フロントエンド・バックエンドの実務を経験しました。\n「ユーザーにとって使いやすいサービスを作る」ことを大切にしています。',
+  sns: [{ name: 'GitHub', url: 'https://github.com/n-kanchika/' }],
   // email: 'xxx@gmail.com',
   contactMessage: '現在お仕事の受注は停止しております。再開時期は未定です。',
   // contactMessage: 'お仕事のご相談・ご依頼は、メールからお気軽にどうぞ。',

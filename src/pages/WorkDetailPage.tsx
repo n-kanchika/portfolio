@@ -1,4 +1,4 @@
-import { Link, type LoaderFunctionArgs,useLoaderData, useRouteLoaderData } from 'react-router'
+import { Link, type LoaderFunctionArgs, useLoaderData, useRouteLoaderData } from 'react-router'
 
 import type { loader as rootLoader } from '@/components/layout/RootLayout'
 import { GithubIcon } from '@/components/ui/GithubIcon'
