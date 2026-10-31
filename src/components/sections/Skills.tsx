@@ -45,10 +45,12 @@ export function Skills({ skills }: { skills: Skill[] }) {
                     <span className={styles.years}>{experienceSince(skill.startedAt)}</span>
                   </div>
                   {skill.description && <p className={styles.description}>{skill.description}</p>}
-                  {skill.level && <p className={styles.level}>
-                    <span aria-hidden="true">{'★'.repeat(skill.level)}</span>
-                    <span className="visually-hidden">レベル：{skill.level}（5段階中）</span>
-                  </p>}
+                  {skill.level && (
+                    <p className={styles.level}>
+                      <span aria-hidden="true">{'★'.repeat(skill.level)}</span>
+                      <span className="visually-hidden">レベル：{skill.level}（5段階中）</span>
+                    </p>
+                  )}
                 </li>
               ))}
             </ul>
