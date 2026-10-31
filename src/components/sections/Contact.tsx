@@ -1,5 +1,6 @@
 import { SectionTitle } from '@/components/ui/SectionTitle'
 import type { Profile } from '@/types'
+
 import styles from './Contact.module.css'
 
 export function Contact({ profile }: { profile: Profile }) {

@@ -1,10 +1,12 @@
-import { Link, useLoaderData, useRouteLoaderData, type LoaderFunctionArgs } from 'react-router'
+import { Link, type LoaderFunctionArgs,useLoaderData, useRouteLoaderData } from 'react-router'
+
 import type { loader as rootLoader } from '@/components/layout/RootLayout'
 import { GithubIcon } from '@/components/ui/GithubIcon'
 import { ImageSlider } from '@/components/ui/ImageSlider'
 import { WorkTag } from '@/components/ui/WorkTag'
 import { getWork } from '@/lib/api'
 import { formatYearMonth, workPeriod } from '@/utils/period'
+
 import styles from './WorkDetailPage.module.css'
 
 export async function loader({ params }: LoaderFunctionArgs) {

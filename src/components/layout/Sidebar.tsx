@@ -1,6 +1,8 @@
 import { Link, useLocation } from 'react-router'
+
 import { useActiveSection } from '@/hooks/useActiveSection'
 import type { Profile } from '@/types'
+
 import styles from './Sidebar.module.css'
 
 const navItems = [

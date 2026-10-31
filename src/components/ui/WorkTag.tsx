@@ -1,4 +1,5 @@
 import type { WorkGenre } from '@/types'
+
 import styles from './WorkTag.module.css'
 
 const labels: Record<WorkGenre, string> = {

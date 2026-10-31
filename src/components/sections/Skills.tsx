@@ -1,8 +1,9 @@
 import { SectionTitle } from '@/components/ui/SectionTitle'
+import { SkillIcon } from '@/components/ui/SkillIcon'
 import type { Skill } from '@/types'
 import { experienceSince } from '@/utils/period'
+
 import styles from './Skills.module.css'
-import { SkillIcon } from '@/components/ui/SkillIcon'
 
 /** category ごとにまとめる（並び順はデータに出てきた順） */
 function groupByCategory(skills: Skill[]) {

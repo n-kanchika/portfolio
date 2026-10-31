@@ -1,8 +1,9 @@
 import { createBrowserRouter } from 'react-router'
-import { RootLayout, loader as rootLoader } from '@/components/layout/RootLayout'
+
+import { loader as rootLoader,RootLayout } from '@/components/layout/RootLayout'
 import { ErrorPage } from '@/pages/ErrorPage'
 import { loader as topLoader, TopPage } from '@/pages/TopPage'
-import { WorkDetailPage, loader as workDetailLoader } from '@/pages/WorkDetailPage'
+import { loader as workDetailLoader,WorkDetailPage } from '@/pages/WorkDetailPage'
 
 export const router = createBrowserRouter([
   {
